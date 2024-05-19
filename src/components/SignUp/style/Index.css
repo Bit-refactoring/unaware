@@ -1,0 +1,139 @@
+.login-modal-header {
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(#FFECD2, #FCB69F);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: larger;
+    font-weight: 900;
+    color: var(--blackColor);
+}
+.login-modal-body {
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(#0D324D, #7F5A83);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-modal-body > div {
+    width: 100%;
+}
+
+.modal-body-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--whiteColor);
+}
+
+.modal-body-signup-text, .modal-body-signin {
+    color: rgb(114, 123, 134);
+}
+
+.body-signin-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.signin-horizontal-line {
+    /* display: none; */
+    height: 0;
+    width: 70px;
+
+    border: 0.6px solid rgb(114, 123, 134);
+}
+
+.body-signin-with-gmail {
+    height: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-option-google {
+    width: 50%;
+    height: 30px;
+
+    /* border: 1px solid rgb(114, 123, 134); */
+    background-color: var(--blackColor);
+    border-radius: 3px;
+    box-shadow: 0 1px 1px lightblue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+
+.signin-option-google:active {
+    box-shadow: 0 0px 0px lightblue;
+}
+
+.signin-option-google img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 3px 0 0 3px;
+    background-color: var(--whiteColor);
+}
+
+.body-signin-with-email-pass {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.body-signin-with-pass-reset {
+    width: 343px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-weight: 700;
+}
+
+.modal-body-signup-text {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.body-signin-with-pass-action-button {
+
+}
