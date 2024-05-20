@@ -1,4 +1,9 @@
-.article-landing-page {
+.about-page-container {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.about-page {
     width: 100%;
     height: 100%;
     padding: 40px;
@@ -23,7 +28,7 @@
     display: grid;
 }
 
-.course-card {
+.member-card {
     width: 300px;
     height: 250px;
     padding: 10px;
@@ -32,38 +37,37 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
     border-radius: 10px;
     box-shadow: 1px 0px 0px white;
 }
 
-.course-card > span {
-    width: 100%;
-}
-
-.course-card-course-name {
-    padding: 5px 0px;
-    box-sizing: border-box;
+.member-card-member-name {
     font-weight: 750;
     font-size: 1.5rem;
 }
 
-.course-card-course-description {
-    height: 65px;
+.member-card-member-designation {
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
-.course-card-view-button {
+.member-card-view-button {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.course-card > img {
-    min-width: 80px;
-    height: 80px;
+.member-card-image-tag {
+    /* position: absolute; */
+}
+
+.member-card-image-tag > img {
+    min-width: 110px;
+    height: 110px;
 
     border-radius: 50%;
 }

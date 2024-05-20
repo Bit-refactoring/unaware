@@ -19,30 +19,30 @@ function LandingPage({
     },
     {
       courseId: 2,
-      courseName: "A-Z DSA Course",
-      courseDescription: "Boost your DSA skills with our handy cheat sheet",
+      courseName: "Java",
+      courseDescription: "Boost your Core Java",
       publicImagePath: "",
       isPurchased: true
     },
     {
       courseId: 3,
-      courseName: "A-Z DSA Course",
-      courseDescription: "Boost your DSA skills with our handy cheat sheet",
+      courseName: "C++",
+      courseDescription: "Boost your C++ skills with our handy cheat sheet",
       publicImagePath: "",
       isPurchased: true
     },
     {
       courseId: 4,
-      courseName: "A-Z DSA Course",
-      courseDescription: "Boost your DSA skills with our handy cheat sheet",
+      courseName: "Python",
+      courseDescription: "Boost your Python skills with our handy cheat sheet",
       publicImagePath: "",
       isPurchased: true
     }
     ])
   }, []);
 
-  const handleViewClick = (courseId) => {
-    navigate(`/course/${courseId}`);
+  const handleViewClick = (courseId, courseName) => {
+    navigate(`/course/${courseId}-${courseName.split(' ').join('_')}`);
   }
 
   return (
@@ -58,7 +58,7 @@ function LandingPage({
             <span 
               key={key} 
               className={`course-card clickable ${isAppBgColorDark ? 'light-border' : 'dark-border'}`}
-              onClick={() => handleViewClick(registeredCourse.courseId)}
+              onClick={() => handleViewClick(registeredCourse.courseId, registeredCourse.courseName)}
             >
               <img src={`/company_logo.png`} alt={registeredCourse.courseName} />
               <span className='course-card-course-name'>{registeredCourse.courseName}</span>

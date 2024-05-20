@@ -1,0 +1,29 @@
+.article-notebook {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.notebook-write-button {
+    position: absolute !important;
+    right: 5px;
+}
+
+.modal-notebook-section {
+    width: var(--sideNavBarWidth);
+    height: 100%;
+
+    box-shadow: 0px 0px 5px lightblue;
+    color: white;
+
+    overflow-x: hidden;
+}
+
+.modal-notebook-close-button-div {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
